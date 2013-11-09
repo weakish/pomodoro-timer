@@ -83,7 +83,7 @@ check_ring_file_available() {
 
 fetch_ring_file() {
   local ring_file_url
-  ring_file_url='https://raw.github.com/weakish/pomodoro/blob/master/ring-files/'$RING_FILE
+  ring_file_url='https://github.com/weakish/pomodoro-timer/raw/master/ring-files/'$RING_FILE
 
   mkdir -p $POMODORO_DIRECTORY && cd $POMODORO_DIRECTORY
   wget --no-check-certificate $ring_file_url
