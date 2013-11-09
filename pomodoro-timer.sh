@@ -105,7 +105,7 @@ start_pomodoro_timer() {
   pomodoro_time=$1
 
   echo "ogg123 $POMODORO_DIRECTORY/$RING_FILE; notify-send --urgency=low --expire-time=600 'Pomodoro finished.'" |
-  at now + $pomodoro_time min 2>|
+  at now + $pomodoro_time min 2>&1 |
   grep -E -o 'job [0-9]+' | grep -E -o '[0-9]+' > $POMODORO_DIRECTORY/$POMODORO_JOB
   echo "Pomodoro started."
 }
