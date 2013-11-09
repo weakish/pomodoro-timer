@@ -31,58 +31,75 @@
 
 @test "default" {
   run sh ../pomodoro-timer.sh
+  [ "$status" -eq 0 ]
   [ "$output" = "Pomodoro started." ]
+}
+
+
+@test "destroy" {
+  run sh ../pomodoro-timer.sh destroy
+  [ "$status" -eq 0 ]
+  [ "$output" = "Pomodoro destroyed!" ]
 }
 
 
 @test "help" {
   run sh ../pomodoro-timer.sh help
+  [ "$status" -eq 0 ]
   [ "${lines[0]}" = "A simple pomodoro timer." ]
 }
 
 @test "--help" {
   run sh ../pomodoro-timer.sh --help
+  [ "$status" -eq 0 ]
   [ "${lines[0]}" = "A simple pomodoro timer." ]
 }
 
 @test "-h" {
   run sh ../pomodoro-timer.sh -h
+  [ "$status" -eq 0 ]
   [ "${lines[0]}" = "A simple pomodoro timer." ]
 }
 
 
 @test "version" {
   run sh ../pomodoro-timer.sh version
+  [ "$status" -eq 0 ]
   echo "$output" | grep -q -E '^v[0-9]'
 }
 
 
 @test "--version" {
   run sh ../pomodoro-timer.sh --version
+  [ "$status" -eq 0 ]
   echo "$output" | grep -q -E '^v[0-9]'
 }
 
 
 @test "-V" {
   run sh ../pomodoro-timer.sh -V
+  [ "$status" -eq 0 ]
   echo "$output" | grep -q -E '^v[0-9]'
 }
 
 
 @test "x minutes" {
   run sh ../pomodoro-timer.sh 6
+  [ "$status" -eq 0 ]
   [ "$output" = "Pomodoro started." ]
 }
 
 
 @test "xx minutes" {
   run sh ../pomodoro-timer.sh 23
+  [ "$status" -eq 0 ]
   [ "$output" = "Pomodoro started." ]
 }
 
 
 @test "xxx minutes" {
   run sh ../pomodoro-timer.sh 123
+  [ "$status" -eq 0 ]
   [ "$output" = "Pomodoro started." ]
 }
 
@@ -105,8 +122,3 @@
   [ "$output" = "Error: pomodoro time must be a positive interger." ]
 }
 
-@test "destroy" {
-  run sh ../pomodoro-timer.sh destroy
-  [ "$status" -eq 1 ]
-  [ "$output" = "Pomodoro destroyed!" ]
-}
