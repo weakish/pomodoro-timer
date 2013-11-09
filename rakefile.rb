@@ -7,4 +7,6 @@ end
 
 task :test do |t|
   sh "cd test && bats pomodoro-timer.bats"
+  puts "Do not forget to run atq and atrm."
+  puts "Otherwise, there will be a lot of notifications!"
 end
