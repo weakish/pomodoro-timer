@@ -47,7 +47,7 @@ Ring file
 ---------
 
 Ring file is located at `~/.config/pomodoro-timer/bell.ogg`.
-You can replace with your own ring file,
+You can replace it with your own ring file,
 as long as your ring file is Ogg Vorbis audio file.
 
 
