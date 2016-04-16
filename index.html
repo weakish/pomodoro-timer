@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>pomodoro-timer by weakish</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>pomodoro-timer</h1>
+        <p>a simple command line pomodoro timer</p>
+        <p class="view"><a href="https://github.com/weakish/pomodoro-timer">View the Project on GitHub <small>weakish/pomodoro-timer</small></a></p>
+        <ul>
+          <li><a href="https://github.com/weakish/pomodoro-timer/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/weakish/pomodoro-timer/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/weakish/pomodoro-timer">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="pomodoro-timer" class="anchor" href="#pomodoro-timer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>pomodoro-timer</h1>
+
+<p>A simple pomodoro timer.</p>
+
+<h2>
+<a id="depends" class="anchor" href="#depends" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Depends</h2>
+
+<ul>
+<li>libnotify</li>
+<li>vorbis-tools</li>
+<li>at</li>
+<li>wget</li>
+</ul>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
+
+<p>Use rake:</p>
+
+<pre><code>rake install 
+</code></pre>
+
+<p>The script will be installed into <code>/usr/bin/</code>.</p>
+
+<p>If you want to install to other place, use a <code>prefix</code>, e.g.</p>
+
+<pre><code>rake "install[/usr/local]"
+</code></pre>
+
+<p>If you don't want to use rake, you can just copy this script to any directory in your PATH.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<pre><code>pomodoro-timer
+</code></pre>
+
+<p>By default, a pomodoro takes 25 minutes.</p>
+
+<p>Prefer a short pomodoro? No problem!</p>
+
+<pre><code>pomodoro-timer 15
+</code></pre>
+
+<p>Want to destroy the current pomodoro?</p>
+
+<pre><code>pomodoro-timer destroy
+</code></pre>
+
+<h2>
+<a id="ring-file" class="anchor" href="#ring-file" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ring file</h2>
+
+<p>Ring file is located at <code>~/.config/pomodoro-timer/bell.ogg</code>.
+You can replace it with your own ring file,
+as long as your ring file is Ogg Vorbis audio file.</p>
+
+<h2>
+<a id="pomodoro-technique" class="anchor" href="#pomodoro-technique" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pomodoro technique</h2>
+
+<p>The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s.
+The technique uses a timer to break down periods of work into 25-minute intervals called "pomodori" (from the Italian word pomodoro for "tomato"), separated by short breaks. 
+For more information, have a look at <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">its wikipedia page</a>.</p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/weakish">weakish</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
