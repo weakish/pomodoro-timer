@@ -14,7 +14,17 @@ Depends
 Install
 -------
 
-Use rake:
+### Use basher
+
+```sh
+; basher install weakish/pomodoro-timer
+```
+
+Require [basher][] version: `>=39875bc`.
+
+[basher]: https://github.com/basherpm/basher
+
+### Use rake
 
     rake install
 
@@ -24,8 +34,10 @@ If you want to install to other place, use a `prefix`, e.g.
 
     rake "install[/usr/local]"
 
-If you don't want to use rake, you can just copy this script to any directory in your PATH.
+### Manually
 
+If you don't want to use basher or rake,
+you can just copy `pomodoro-timer.sh` to any directory in your PATH.
 
 Usage
 -----
