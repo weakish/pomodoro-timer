@@ -16,7 +16,7 @@ Install
 
 Use rake:
 
-    rake install 
+    rake install
 
 The script will be installed into `/usr/bin/`.
 
@@ -55,5 +55,10 @@ Pomodoro technique
 ------------------
 
 The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s.
-The technique uses a timer to break down periods of work into 25-minute intervals called "pomodori" (from the Italian word pomodoro for "tomato"), separated by short breaks. 
+The technique uses a timer to break down periods of work into 25-minute intervals called "pomodori" (from the Italian word pomodoro for "tomato"), separated by short breaks.
 For more information, have a look at [its wikipedia page](https://en.wikipedia.org/wiki/Pomodoro_Technique).
+
+License
+---------
+
+0BSD
