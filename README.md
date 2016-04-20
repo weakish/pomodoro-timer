@@ -14,7 +14,7 @@ Depends
 Install
 -------
 
-### Use basher
+### With basher
 
 ```sh
 ; basher install weakish/pomodoro-timer
@@ -24,7 +24,7 @@ Require [basher][] version: `>=39875bc`.
 
 [basher]: https://github.com/basherpm/basher
 
-### Use rake
+### With rake
 
     rake install
 
@@ -62,6 +62,24 @@ Ring file is located at `~/.config/pomodoro-timer/bell.ogg`.
 You can replace it with your own ring file,
 as long as your ring file is Ogg Vorbis audio file.
 
+Test
+------
+
+### With rake
+
+```sh
+; rake test
+```
+
+### Manually
+
+```sh
+; cd test
+; bats pomodoro-timer.bats
+```
+
+Do not forget to run atq and atrm after tests.
+Otherwise, there will be a lot of notifications!
 
 Pomodoro technique
 ------------------
